@@ -29,7 +29,48 @@ export default function DrawerAppBar(props) {
 
   const drawer = (
     <Box onClick={handleDrawerToggle} sx={{ textAlign: 'center' }}>
+        <Typography variant="h6" sx={{ my: 2 }}>
+        Eduardo
+      </Typography>
+      <Divider />
+      <List>
+          <ListItem key='inicio' disablePadding>
+            <ListItemButton href='/inicio' sx={{ textAlign: 'center' }}>
+              <ListItemText  primary='Inicio' />
+            </ListItemButton> 
+          </ListItem>
+
+          <ListItem key='tierra' disablePadding>
+            <ListItemButton href='/tierra' sx={{ textAlign: 'center' }}>
+              <ListItemText primary='Tierra' />
+            </ListItemButton> 
+          </ListItem>
+
+          <ListItem key='agua' disablePadding>
+            <ListItemButton href='/agua' sx={{ textAlign: 'center' }}>
+              <ListItemText primary='Agua' />
+            </ListItemButton> 
+          </ListItem>
+
+          <ListItem key='fuego' disablePadding>
+            <ListItemButton href='/fuego' sx={{ textAlign: 'center' }}>
+              <ListItemText primary='Fuego' />
+            </ListItemButton> 
+          </ListItem>
+
+          <ListItem key='aire' disablePadding>
+            <ListItemButton href='/aire' sx={{ textAlign: 'center' }}>
+              <ListItemText primary='Aire' />
+            </ListItemButton> 
+          </ListItem>
+
+          <ListItem key='login' disablePadding>
+            <ListItemButton href='/login' sx={{ textAlign: 'center' }}>
+              <ListItemText primary='Cerrar Session' />
+            </ListItemButton> 
+          </ListItem>
       
+      </List>
     </Box>
   );
 
