@@ -1,23 +1,18 @@
 import logo from './logo.svg';
 import './App.css';
+import { Tierra } from './componentes/Tierra';
+import { Agua } from './componentes/Agua';
+import { Fuego } from './componentes/Fuego';
+import { Aire } from './componentes/Aire';
+import { Inicio } from './componentes/Inicio';
+import { AppRoutes } from './routes/AppRoutes';
+import DrawerAppBar from './componentes/DrawerAppBar';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <DrawerAppBar />
+      <AppRoutes />
     </div>
   );
 }
